@@ -388,3 +388,99 @@ B=[[5, 3, 1], [3, 2, 0], [4, 1, 5]]
 C=mult_matriz(A, B)
 print(C)
 ```
+
+## Programação Modular
+### Bibliotecas de funções
+
+* São subprogramas que auxiliam o programador a desenvolver melhor o algoritmo.
+* Implementam operações e funções específicas.
+* Existem bibliotecas utilizadas para plotar gráficos, fazer operações de álgebra linear, estruturar uma rede neural e diversas aplicações.
+* Ao invés de criarmos uma função lógica para somar matrizes, podemos utilizar as funções *linalg* da biblioteca Numpy.
+* Para plotarmos uma resposta gráfica podemos utilizar as funções da biblioteca Matplotlib.
+* Para criarmos uma rede neural podemos utilizar bibliotecas como o *tensorflow* ou *pytorch* e para desenvolver um game a biblioteca *pygame*.
+
+### Estrutura modular
+
+* Módulos são arquivos em Python com algoritmos desenvolvidos.
+* Utilizar a estrutura modular separa as funcionalidades do programa em módulos independentes e intercambiáveis.
+* Assim como as bibliotecas de funções, os módulos são importados em cada algoritmo.
+* Conforme a complexidade e o tamanho do programa aumenta, a divisão modular facilita o entendimento e adaptação do código.
+* Os módulos evitam que o programador tenha que repetir comandos com funcionalidades iguais em algoritmos com aplicações diferentes.
+
+## Programação Orientada a Objeto
+### Evolução e conceitos de programação
+
+* Evolução das linguagens
+   * Linguagem de máquina:
+      * 0001011100 ... 0011 ... 001111
+   * Linguagem Assembly:
+      * ADD R1, R2, #4
+      * MOV CX, 07H
+   * Linguagem de alto nível:
+      * x=6
+      * y=x+3
+      * soma=x+y
+* Conceitos de programação
+   * Programação estruturada:
+      * Utiliza sub-rotinas e funções.
+   * Programação modular:
+      * As rotinas são desenvolvidas em módulos e interligadas ao código principal.
+   * Programação orientada a objeto:
+      * Um conjunto de classes que definem os objetos caracterizados no software.
+
+### POO (Programação Orientada a Objeto)
+
+* Definindo uma POO
+   * Objeto:
+      * Possui seus dados e código.
+      * Instancias de cada classe.
+   * Dados:
+      * São os atributos do objeto pertencente a uma classe.
+   * Código:
+      * São os métodos do objeto.
+   * Classes:
+      * Definem os tipos de objetos.
+      * Onde os dados e o código são definidos.
+* Exemplo
+   * Classe
+      * Matriz.
+   * Instancias
+      * Quadrada.
+      * Retangular.
+   * Atributos
+      * Número de linhas.
+      * Número de colunas.
+      * Termos da matriz.
+   * Métodos
+      * Determinante(termos da matriz).
+      * Dimensão(número de linhas, número de colunas).
+
+### Evolução e conceitos de programação
+
+* Estrutura de aplicação
+   * A classe deve ser inicializada com um nome:
+      * `class Matriz:`
+      * Dentro da classe Matriz devemos definir seus atributos e funções.
+   * Construtor de classe:
+      * `__init__(self, atributos do objeto)`
+      * Conectado pelo interpretador quando objetos são criados.
+* A classe deve conter todos os elementos do objeto
+   * `__init__(self, n_linhas, n_colunas, termos)`
+   * Quando definirmos uma matriz no código devemos inserir os 3 valores dos atributos.
+* Código dos objetos
+   * Funções atribuídas ao objeto dentro da classe que podem ser chamadas pelo código principal
+```
+def determinante (self)
+  codigo
+```
+
+## Debate sobre Programação
+### A Lei de Moore e os computadores quânticos
+
+* O que diz a Lei de Moore?
+* Quais são os possíveis limites para esta lei ?
+* O que foi responsável para que esta evolução prevista por Gordon Moore fosse verdadeira?
+* Porque precisamos continuar esta evolução para o desenvolvimento da tecnologia?
+* Existe um limite para a evolução da computação?
+* O que são os computadores Quânticos?
+
