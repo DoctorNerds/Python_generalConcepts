@@ -1,5 +1,5 @@
 """
-@author: Fábio Mori
+@author: FÃ¡bio Mori
 """
 
 #Escola Matriz - Class 17: Matrices in Python
@@ -11,8 +11,8 @@ def cria_matriz (lin, col, valor):
         linha=[]
         for j in range(col):
             linha.append(valor)
-        matriz.append(linha)
-    return matriz
+            matriz.append(linha)
+        return matriz
 
 def soma_matriz(A,B):
     n_lin=len(A)
