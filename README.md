@@ -292,3 +292,99 @@ while condição:
 
 ## Matrizes em Python
 ### Manipulação de listas
+
+* Quando criamos uma variável do tipo lista podemos manipular o valor por índice ou intervalo que queremos utilizar.
+* Dado uma `lista=[1, 2, 3, 4, 5]` podemos utilizar `lista[0]` para acessar o primeiro valor da lista.
+* A contagem dos índices de uma lista começa com zero.
+* `lista[1:3]` pea o elemento que começa no índice 1 e vai até o índice 2 (um a menos que o índice 3 escrito) e retorna [2, 3].
+* `lista[:4]` pega desde o primeiro elemento até o índice 3 e retorna [1, 2, 3, 4].
+* `lista[2:]` pega desde o elemento índice 2 até o final da lista e retorna [3, 4, 5].
+* Para criar uma `lista2` que seja um clone de uma `lista1`, ou seja, criar outra lista com os mesmos valores e independente da original temos que utilizar o comando `lista2=lista1[:]`.
+* Quando fazemos `lista2=lista1` qualquer alteração de uma das listas vai alterar o valor da outra.
+* Podemos concatenar listas com a operação de soma entre elas. Se `inicio=[1, 2, 3]` e `fim=[4, 5, 6]` então `lista=inicio+fim` retorna o valor `[1, 2, 3, 4, 5, 6]`.
+* Um comando muito importante é o `.append`, que insere mais um elemento (que pode ser outra lista) ao final da lista e é utilizado na criação de matrizes.
+
+### Criando matrizes
+*Embora seja recomendado que você crie matrizes através de arrays da biblioteca Numpy, é importante entender como seria a criação de uma função que retornasse uma matriz sem a utilização desta biblioteca, para entendimento conceitual deste processo. De toda forma, recomendamos utilizar as arrays quando forem operar matrizes na prática.*
+
+* Matrizes em Python são listas de listas, uma estrutura bidimensional de linhas e colunas.
+* Para criar uma matriz podemos desenvolver uma função para gerar os valores de uma matriz.
+* O primeiro *loop for* abrange todos os elementos das colunas da matriz e o segundo *loop for* os elementos das linhas da matriz.
+* Algoritmo em Python:
+```
+def cria_matriz(lin, col, valor):
+
+   matriz=[]
+   for i in range(lin):
+        linha=[]
+        for j in range (col):
+           linha.append(valor)
+       matriz.append(linha)
+    return matriz
+```
+* Função que lê os valores digitados pelo usuário de número de linhas, colunas e valor de cada índice para criar uma matriz.
+* Algoritmo em Python:
+```
+def le_matriz():
+    lin=int(input("Digite o número de linhas: "))
+    col=int(input("Digite o número de colunas: "))
+    return cria_matriz(lin, col)
+
+def cria_matriz(n_lin, n_col):
+    matriz=[]
+    for i in range (n_lin):
+        linha=[]
+        for j in range (n_col):
+            valor=int(input("Digite o elemento: "))
+            linha.append(valor)
+        matriz.append(linha)
+    return matriz
+
+A=le_matriz()
+```
+* Funções para somar duas matrizes A e B:
+```
+def cria_matriz (lin, col, valor):
+    matriz=[]
+    for i in range(lin):
+        linha=[]
+        for j in range(col):
+            linha.append(valor)
+        matriz.append(linha)
+    return matriz
+
+def soma_matriz(A,B):
+    n_lin=len(A)
+    n_col=len(A[0])
+    C=cria_matriz(n_lin, n_col, 0)
+    for lin in range(n_lin):
+        for col in range(n_col):
+            C[lin][col]=(A[lin][col])+(B[lin][col])
+    return C
+
+A=[[1, 3, 4], [3, 5, 1], [0, 1, 4]]
+B=[[5, 3, 1], [3, 2, 0], [4, 1, 5]]
+
+C=soma_matriz(A, B)
+print(C)
+```
+* Funções para multiplicar duas matrizes A e B:
+```
+def mult_matriz(A,B):
+    n_lin_A, n_col_A = len(A), len(A[0])
+    n_lin_B, n_col_B = len(B), len(B[0])
+    C=[]
+    for linha in range(n_lin_A):
+        C.append([])
+        for coluna in range(n_col_B):
+            C[linha].append(0)
+            for k in range(n_col_A):
+                C[linha][coluna]+=(A[linha][k])*(B[k][coluna])
+    return C
+
+A=[[1, 3, 4], [3, 5, 1], [0, 1, 4]]
+B=[[5, 3, 1], [3, 2, 0], [4, 1, 5]]
+
+C=mult_matriz(A, B)
+print(C)
+```
