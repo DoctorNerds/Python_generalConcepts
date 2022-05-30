@@ -1,8 +1,8 @@
 # Python_generalConcepts
 
-:us: Introduction general concepts of Computer Science and Python.
+:us: Material developed by Fábio Mori about introduction general concepts of Computer Science and Python.
 
-:brazil: Introdução de conceitos gerais de Ciência da Comptuação e Python.
+:brazil: Material desenvolvido pelo Fábio Mori sobre introdução de conceitos gerais de Ciência da Comptuação e Python.
 
 # Lógica de Programação
 ## Introdução a Ciência da Computação
@@ -88,6 +88,9 @@
    * R
    * Basic
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 11: Introdução a Ciência da Computação](https://youtu.be/tuwNh85vYBc)
+
 ## Introdução ao Python
 ### Ambiente de programação
 
@@ -164,6 +167,11 @@
    * `or` representa o “ou” lógico.
    * `not` representa o “não” lógico.
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 12: Introdução ao Python](https://youtu.be/a3tx_3DP8Yk)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[Funções Gerais](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/01.generalFunctions)
+
 ## Operação Condicional – IF / ELSE
 ### Estrutura de um algoritmo
 
@@ -208,6 +216,10 @@ else
     comando
 ```
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 13: Operação Condicional - IF/ELSE](https://youtu.be/gIROuwtijrc)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[IF/ELSE](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/02.ifElse)
 
 ## Operação Condicional – FOR / WHILE
 ### Conceito de loop
@@ -249,6 +261,11 @@ while condição:
 * Blocos de repetição como `if`, `else`, `for` e `while` muitas vezes são utilizados em conjunto dentro de um mesmo bloco.
 * Se a condição `while` nunca for falsa o código pode ficar em "loop infinito".
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 14: Operação Condicional - FOR e WHILE](https://youtu.be/qy36SGcX_KU)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[FOR/WHILE](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/03.forWhile)
+
 ## Debate sobre Programação
 ### Aplicação de programação no cotidiano e Inteligência Artificial (AI)
 
@@ -261,6 +278,10 @@ while condição:
    * Apple.
    * Magazine Luiza.
    * Banco Bradesco.
+
+
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 15: Debate sobre programação](https://youtu.be/TeYtYd8dHfM)
 
 ## Funções
 ### Otimização ou re-fatoração de um código
@@ -289,6 +310,11 @@ while condição:
 * Podemos executar linha por linha e observar a evolução do valor das variáveis em cada momento do programa.
 * É possível entrar dentro dos blocos de funções e executá-las comando por comando.
 * Podemos sair de dentro dos blocos de funções e retornar ao algoritmo principal a qualquer momento.
+
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 16: Funções](https://youtu.be/JcypRtF0ny8)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[Funções](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/04.function)
 
 ## Matrizes em Python
 ### Manipulação de listas
@@ -389,6 +415,11 @@ C=mult_matriz(A, B)
 print(C)
 ```
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 17: Matrizes em Python](https://youtu.be/mhIT7RPmPZs)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[Matrizes em Python](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/05.matrices)
+
 ## Programação Modular
 ### Bibliotecas de funções
 
@@ -406,6 +437,12 @@ print(C)
 * Assim como as bibliotecas de funções, os módulos são importados em cada algoritmo.
 * Conforme a complexidade e o tamanho do programa aumenta, a divisão modular facilita o entendimento e adaptação do código.
 * Os módulos evitam que o programador tenha que repetir comandos com funcionalidades iguais em algoritmos com aplicações diferentes.
+
+
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 18: Programação Modular](https://youtu.be/UrbFmsjzgDk)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[Programação Modular](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/06.modularProgramming)
 
 ## Programação Orientada a Objeto
 ### Evolução e conceitos de programação
@@ -474,6 +511,11 @@ def determinante (self)
   codigo
 ```
 
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 19: Programação Orientada a Objeto](https://youtu.be/0UYxzqrbRjM)
+Confira o exercício proposto e a solução em Python sobre este tema:
+[Programação Orientada a Objetivo](https://github.com/DoctorNerds/Python_generalConcepts/tree/main/07.objectOrientedProgramming)
+
 ## Debate sobre Programação
 ### A Lei de Moore e os computadores quânticos
 
@@ -483,4 +525,8 @@ def determinante (self)
 * Porque precisamos continuar esta evolução para o desenvolvimento da tecnologia?
 * Existe um limite para a evolução da computação?
 * O que são os computadores Quânticos?
+
+
+Assista uma aula da Escola Matriz explicando estes conceitos no link a seguir:
+[Aula 20: Debate sobre Programação](https://youtu.be/8py8X-4NpE8)
 
