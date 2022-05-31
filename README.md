@@ -1,8 +1,8 @@
 # Python_generalConcepts
 
-:us: Material developed by Fábio Mori about introduction general concepts of Computer Science and Python.
+:us: Material developed by Fábio Mori in 2020 about introduction general concepts of Computer Science and Python.
 
-:brazil: Material desenvolvido pelo Fábio Mori sobre introdução de conceitos gerais de Ciência da Comptuação e Python.
+:brazil: Material desenvolvido pelo Fábio Mori, em 2020, sobre introdução de conceitos gerais de Ciência da Comptuação e Python.
 
 # Lógica de Programação
 ## Introdução a Ciência da Computação
